@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, QtGui, QtCore
 from PyQt5.QtGui import QIcon
 from PyQt5.QtWidgets import (
     QWidget, QLineEdit, QPushButton,
-    QFileDialog, QMessageBox, QCheckBox, QVBoxLayout, QHBoxLayout, QGroupBox
+    QFileDialog, QMessageBox, QCheckBox, QVBoxLayout, QHBoxLayout, QGroupBox, QLabel
 )
 from CodeOverview.logic.processador import ProcessadorEstrutura
 import os
@@ -116,6 +116,26 @@ class MainWindow(QWidget):
 
         grupo_log.setLayout(layout_log)
         layout.addWidget(grupo_log)
+        # Créditos
+        grupo_creditos = QGroupBox("Créditos")
+        layout_creditos = QHBoxLayout()
+
+        
+        label_nome = QLabel("Desenvolvido por: Fredy Prudente")
+        label_nome.setStyleSheet("font-weight: bold;")
+
+        label_github = QLabel('<a href="https://github.com/fredy-prudente/CodeOverview">GitHub</a>')
+        label_github.setOpenExternalLinks(True)
+        label_github.setTextFormat(QtCore.Qt.RichText)
+        label_github.setTextInteractionFlags(QtCore.Qt.TextBrowserInteraction)
+
+        
+        layout_creditos.addWidget(label_nome)
+        layout_creditos.addStretch()  
+        layout_creditos.addWidget(label_github)
+
+        grupo_creditos.setLayout(layout_creditos)
+        layout.addWidget(grupo_creditos)
 
         self.setLayout(layout)
 
