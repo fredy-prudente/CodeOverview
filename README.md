@@ -4,6 +4,8 @@ Uma aplicação desktop desenvolvida em Python utilizando PyQt5, que analisa a e
 
 Este projeto foi desenvolvido para facilitar a análise e documentação da estrutura e conteúdo de projetos, integrando-se facilmente com ferramentas de inteligência artificial como o GPT.
 
+Com o CodeOverview, compartilhar a estrutura do seu projeto ficou muito mais simples – sem precisar enviar todos os arquivos manualmente! 😎👍
+
 ## 📋 Funcionalidades
 
 - Selecionar o diretório do projeto a ser analisado.
@@ -16,6 +18,12 @@ Este projeto foi desenvolvido para facilitar a análise e documentação da estr
 ## 📸 Screenshots
 
 ![Tela Principal](CodeOverview/resources/icons/print_interface.png)
+
+## 📥 Download
+
+Você pode baixar a versão compilada do **CodeOverview** para Windows através do link abaixo:
+
+- [CodeOverview v1.0.0 - Executável para Windows](https://github.com/fredy-prudente/CodeOverview/releases/download/1.0.0/CodeOverview.exe)
 
 ## 🚀 Instalação
 
