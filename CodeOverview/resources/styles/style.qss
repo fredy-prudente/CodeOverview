@@ -1,0 +1,25 @@
+/* CodeOverview/resources/styles/style.qss */
+
+QWidget {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton {
+    border: none;
+    border-radius: 5px;
+}
+
+QPushButton:hover {
+    opacity: 0.8;
+}
+
+QLineEdit {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+QCheckBox {
+    font-size: 14px;
+}
